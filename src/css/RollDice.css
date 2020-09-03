@@ -1,0 +1,9 @@
+.RollDice {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* width: 1200px; */
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: space-evenly;
+}
