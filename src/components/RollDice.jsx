@@ -18,7 +18,7 @@ export default class RollDice extends Component {
 		});
 		setTimeout(() => {
 			this.setState({ isClicked: false });
-		}, 820);
+		}, 1000);
 	};
 	render() {
 		return (
