@@ -9,13 +9,14 @@ export default class RollDice extends Component {
 		nums: [ 'one', 'two', 'three', 'four', 'five', 'six' ]
 	};
 	handleClick = e => {
-		const die1 = Math.floor(Math.random() * 6);
-		const die2 = Math.floor(Math.random() * 6);
+		const die1 = Math.floor(Math.random() * this.props.nums.length);
+		const die2 = Math.floor(Math.random() * this.props.nums.length);
 
 		this.setState({
 			isClicked: true,
 			isMatched: false
 		});
+
 		setTimeout(() => {
 			if (die1 === die2) {
 				return this.setState({
