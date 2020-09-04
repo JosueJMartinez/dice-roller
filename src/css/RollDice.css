@@ -1,4 +1,7 @@
 .RollDice {
+}
+
+.RollDice-flexbox {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -6,4 +9,29 @@
 	margin-left: auto;
 	margin-right: auto;
 	justify-content: space-evenly;
+}
+
+.RollDice-myButton {
+	box-shadow: inset 0px 1px 0px 0px #efdcfb;
+	background: linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
+	background-color: #dfbdfa;
+	border-radius: 6px;
+	border: 2px solid #c584f3;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 28px;
+	font-weight: bold;
+	padding: 15px 43px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #9752cc;
+}
+.RollDice-myButton:hover {
+	background: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+	background-color: #bc80ea;
+}
+.RollDice-myButton:active {
+	position: relative;
+	top: 1px;
 }

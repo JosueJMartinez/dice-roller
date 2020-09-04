@@ -7,7 +7,10 @@ export default class Die extends Component {
 
 		return (
 			<div className="Die">
-				<i class={`fas fa-dice-${this.props.number}`} />
+				<i
+					className={`fas fa-dice-${props.number} ${props.isClicked &&
+						'Die-clicked'}`}
+				/>
 			</div>
 		);
 	}
