@@ -39,13 +39,15 @@ export default class RollDice extends Component {
 					<Die number={this.state.die1} isClicked={this.state.isClicked} />
 					<Die number={this.state.die2} isClicked={this.state.isClicked} />
 				</div>
-				<button
-					onClick={this.handleClick}
-					className="RollDice-myButton"
-					disabled={this.state.isClicked}
-				>
-					{this.state.isClicked ? 'Rolling...' : 'Click to Roll'}
-				</button>
+				{!this.state.isMatched && (
+					<button
+						onClick={this.handleClick}
+						className="RollDice-myButton"
+						disabled={this.state.isClicked}
+					>
+						{this.state.isClicked ? 'Rolling...' : 'Click to Roll'}
+					</button>
+				)}
 				{this.state.isMatched && <h1>Congrats there is a match</h1>}
 			</div>
 		);
