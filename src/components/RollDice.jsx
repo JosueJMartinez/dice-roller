@@ -12,12 +12,14 @@ export default class RollDice extends Component {
 		const die1 = Math.floor(Math.random() * 6);
 		const die2 = Math.floor(Math.random() * 6);
 		this.setState({
-			die1: this.props.nums[die1],
-			die2: this.props.nums[die2],
 			isClicked: true
 		});
 		setTimeout(() => {
-			this.setState({ isClicked: false });
+			this.setState({
+				die1: this.props.nums[die1],
+				die2: this.props.nums[die2],
+				isClicked: false
+			});
 		}, 1000);
 	};
 	render() {
