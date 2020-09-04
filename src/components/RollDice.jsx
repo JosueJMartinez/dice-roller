@@ -32,7 +32,7 @@ export default class RollDice extends Component {
 					className="RollDice-myButton"
 					disabled={this.state.isClicked}
 				>
-					{this.state.isClicked ? 'Rolling Dice' : 'Click to Roll Dice'}
+					{this.state.isClicked ? 'Rolling...' : 'Click to Roll'}
 				</button>
 			</div>
 		);
